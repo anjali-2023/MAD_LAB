@@ -1,0 +1,57 @@
+package com.example.sjcet.myapplication;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+    EditText et1, et2;
+    TextView tv1;
+    Button btn1, btn2, btn3, btn4, btn5;
+    String s1,s2;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        protected void add(){
+            et1 = (EditText) findViewById(R.id.et1);
+            et2 = (EditText) findViewById(R.id.et2);
+            tv1 = (TextView) findViewById(R.id.result);
+            String s1 = e1.getText().toString();
+            String s2 = e2.getText().toString();
+            tv1 = et1 + et2;
+
+        }
+
+        protected void sub() {
+            et1 = (EditText) findViewById(R.id.et1);
+            et2 = (EditText) findViewById(R.id.et2);
+            tv1 = (TextView) findViewById(R.id.result);
+            String s1 = e1.getText().toString();
+            String s2 = e2.getText().toString();
+            tv1 = et1 - et2;
+        }
+
+        protected void mul() {
+            et1 = (EditText) findViewById(R.id.et1);
+            et2 = (EditText) findViewById(R.id.et2);
+            tv1 = (TextView) findViewById(R.id.result);
+            String s1 = e1.getText().toString();
+            String s2 = e2.getText().toString();
+            tv1 = et1 * et2;
+        }
+        protected void div(){
+            et1 = (EditText) findViewById(R.id.et1);
+            et2 = (EditText) findViewById(R.id.et2);
+            tv1 = (TextView) findViewById(R.id.result);
+            String s1 = e1.getText().toString();
+            String s2 = e2.getText().toString();
+            tv1 = et1 / et2;
+        }
+    }
+}
+
